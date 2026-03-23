@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SYSTEM ACCESS // ASIF 16</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;600;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flicker">
+
+    <!-- Flash Overlay -->
+    <div class="flash-overlay" id="flashOverlay"></div>
+
+    <!-- Blackout Overlay (For Self Destruct) -->
+    <div class="blackout-overlay" id="blackoutOverlay">
+        <div class="reboot-text">JUST KIDDING...<br>HAPPY BIRTHDAY!</div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+
+    <!-- Matrix Rain Background -->
+    <canvas id="matrixBg"></canvas>
+    
+    <!-- CRT Scanlines -->
+    <div class="crt-overlay"></div>
+
+    <!-- UNLOCK SCREEN -->
+    <section class="screen unlock-screen active" id="unlockScreen">
+        <div class="lock-container">
+            <div class="lock-icon">[RESTRICTED ACCESS]</div>
+            <h1 class="unlock-title">SYSTEM LOCKED</h1>
+            <p class="unlock-subtitle">AUTHENTICATION REQUIRED</p>
+            
+            <div class="input-wrapper">
+                <input type="text" class="unlock-input" id="passInput" placeholder="****" maxlength="10" autocomplete="off">
+            </div>
+            
+            <div class="error-msg" id="errorMsg">ACCESS DENIED: INCORRECT KEY</div>
+            
+            <div class="hint">HINT: <span>Nickname?</span></div>
+        </div>
+    </section>
+
+    <!-- FAKE CALL SCREEN -->
+    <section class="screen call-screen" id="callScreen">
+        <div class="call-container">
+            <div class="caller-avatar">[X]</div>
+            <div class="caller-name">ASIF</div>
+            <div class="caller-status">CALLING...</div>
+            <div class="call-buttons">
+                <button class="call-btn call-accept" id="acceptCall">&#9742;</button>
+                <button class="call-btn call-reject" id="rejectCall">&#10006;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- HACK SCREEN -->
+    <section class="screen hack-screen" id="hackScreen">
+        <div class="hack-data-scroll" id="hackDataScroll"></div>
+        <div class="hack-container">
+            <div class="hack-skull">[X]</div>
+            <h1 class="hack-warning">DEVICE HACKED</h1>
+            <p class="hack-subtitle">YOUR MOBILE HAS BEEN HACKED BY TAHA</p>
+            <div class="hack-messages" id="hackMessages"></div>
+            <div class="hack-progress-container">
+                <div class="hack-progress">
+                    <div class="hack-progress-fill" id="hackProgressFill"></div>
+                </div>
+            </div>
+            <div class="hack-percentage" id="hackPercentage">0%</div>
+        </div>
+    </section>
+
+    <!-- SELF DESTRUCT SCREEN -->
+    <section class="screen destruct-screen" id="destructScreen">
+        <div class="destruct-container">
+            <div class="destruct-icon">[!]</div>
+            <div class="destruct-title">CRITICAL FAILURE</div>
+            <div class="destruct-subtitle">SYSTEM OVERLOAD DETECTED</div>
+            <div class="destruct-countdown" id="countdown">5</div>
+        </div>
+    </section>
+
+    <!-- BIRTHDAY WISH SCREEN -->
+    <section class="screen birthday-screen" id="birthdayScreen">
+        <div class="birthday-container">
+            <div class="birthday-img-container">
+                <img src="images/img.jpg" class="birthday-img" alt="Birthday" onerror="this.src='https://via.placeholder.com/260x300/000/00ff41?text=BIRTHDAY+PIC'">
+            </div>
+            <h2 class="birthday-title">HAPPY BIRTHDAY ASIF</h2>
+            <p class="birthday-subtitle">Surprise! Hack Nhii hua... Tension na le!</p>
+            <p class="birthday-msg">Yaar tu special hai. Isliye ye special surprise. Ab aage aur dekh...</p>
+            
+            <div class="fun-btn-container">
+                <button class="delete-btn" id="deleteBtn">DELETE ALL DATA</button>
+            </div>
+            
+            <button class="continue-btn" id="continueBtn">EXPLORE MEMORIES ></button>
+        </div>
+    </section>
+
+    <!-- STORY SCREEN -->
+    <section class="screen story-screen" id="storyScreen">
+        <div class="progress-bar" id="progressBar"></div>
+        <div class="slides-container" id="slideContainer"></div>
+        <div class="tap-area">TAP TO DECRYPT NEXT ></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
