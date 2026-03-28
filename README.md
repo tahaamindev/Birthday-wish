@@ -3,7 +3,7 @@
 A fun hacking-style prank webpage that simulates a system breach and ends with a surprise birthday wish.(password is **ASHI**)
 
 ## 🚀 Demo
-![Preview](screenshot.png)
+![Preview](Screenshot.png)
 
 ## ✨ Features
 - Fake hacking terminal animation  
